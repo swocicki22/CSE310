@@ -16,5 +16,5 @@ The reasoning behind this software is just to keep learning and suring up that f
 I used VScode and my knowledge of Python to write a simple program, I threw some sarcasm in there just for the fun of it. 
 Python
 
-# Useful Websi
+# Useful Website
 * [Toward Data Science](https://towardsdatascience.com/a-complete-guide-to-user-input-in-python-727561fc16e1)
