@@ -1,8 +1,10 @@
 print('Well, hello there buddy, I hope you are ready for this')
 
+value = "Hello World"
+
 question = input("Would you like to see the program? (Y/N) ")
 if question == "Y":
-    print("Hello World ")
+    print(value)
 elif question == "N":
     print("Well thats too bad, goodbye. ")
     quit()
