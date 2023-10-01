@@ -8,26 +8,22 @@ right they will be given the option to continue to the next level, which is then
 {My goal was to push myself, I haven't really coded much in C++ and as a result it was some what complicated and frustrating trying to get the program to run in vscode while working through getting the compiler to work. At the end
 of the day I achieved my goal, the program runs smoothly, and I am quite proud of it.}
 
-
+# website
 
 [Guessing Game Demo](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+I was big on tutorials, c++ syntax is relatively simple, but it is different from Python so looking up syntax guides and learning what to look for was very helpful. 
 
-{Describe the programming language that you used and any libraries.}
+This project was done in strictly C++
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 
 - [Codecademy](https://www.codecademy.com/articles/language/c-plus-plus)
 - [Visualstudio](https://code.visualstudio.com/docs/languages/cpp)
 
-# Future Work
-
-Improvements
+# Future Work/Improvements
 
 - More Personalized, maybe add some different layers to ask them which type of game they'd like to play.
 - Make the game feel more life-like with better responses, that are not so 01010 type responses. 
