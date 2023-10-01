@@ -27,7 +27,7 @@ of the day I achieved my goal, the program runs smoothly, and I am quite proud o
 
 # Future Work
 
-{Improvements}
+Improvements
 
 - More Personalized, maybe add some different layers to ask them which type of game they'd like to play.
 - Make the game feel more life-like with better responses, that are not so 01010 type responses. 
