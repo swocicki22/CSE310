@@ -32,7 +32,7 @@ int main() {
         int attempts = 0;
 
         cout << "Welcome to BYU-Idaho Guessing Game - Level " << level << "!" << endl;
-        cout << "🎉 Get ready for an exciting challenge! 🎉" << endl;
+        cout << "Get ready for an exciting challenge! " << endl;
         cout << "I have selected a number between 1 and " << maxNumber << ". Can you guess it in " << maxAttempts << " attempts?" << endl;
 
         clock_t startTime = clock();
@@ -56,7 +56,7 @@ int main() {
                 clock_t endTime = clock();
                 double duration = static_cast<double>(endTime - startTime) / CLOCKS_PER_SEC;
 
-                cout << "Congratulations! 🎉 You've guessed the number (" << secretNumber << ") in " << attempts << " attempts and " << fixed << setprecision(2) << duration << " seconds." << endl;
+                cout << "Congratulations! You've guessed the number (" << secretNumber << ") in " << attempts << " attempts and " << fixed << setprecision(2) << duration << " seconds." << endl;
                 score += maxAttempts - attempts + 1;
 
                 leaderboard.push_back({ "Player", score });
