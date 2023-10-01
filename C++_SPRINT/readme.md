@@ -1,22 +1,22 @@
 # Overview
 
-{I have always been fascinated by coding, and what really goes into making a program run. That I think, is what interests me so much, how much information can go into building something so simple.}
+I have always been fascinated by coding, and what really goes into making a program run. That I think, is what interests me so much, how much information can go into building something so simple.
 
-{This software that I designed is a simple number guessing game that probes the user to start guessing a random number from 1-100, if they get the answer wrong the program will tell them that its too high or too low. Once they get the answer
-right they will be given the option to continue to the next level, which is then a game from 1-110. And so the game goes on in a cool little loop-style game.}
+This software that I designed is a simple number guessing game that probes the user to start guessing a random number from 1-100, if they get the answer wrong the program will tell them that its too high or too low. Once they get the answer
+right they will be given the option to continue to the next level, which is then a game from 1-110. And so the game goes on in a cool little loop-style game.
 
-{My goal was to push myself, I haven't really coded much in C++ and as a result it was some what complicated and frustrating trying to get the program to run in vscode while working through getting the compiler to work. At the end
-of the day I achieved my goal, the program runs smoothly, and I am quite proud of it.}
+My goal was to push myself, I haven't really coded much in C++ and as a result it was some what complicated and frustrating trying to get the program to run in vscode while working through getting the compiler to work. At the end
+of the day I achieved my goal, the program runs smoothly, and I am quite proud of it.
 
 # website
 
-[Guessing Game Demo](http://youtube.link.goes.here)
+[Guessing Game Demo](https://www.youtube.com/watch?v=ySmRFyBusnw)
 
 # Development Environment
 
 I was big on tutorials, c++ syntax is relatively simple, but it is different from Python so looking up syntax guides and learning what to look for was very helpful. 
 
-This project was done in strictly C++
+This project was done strictly in C++
 
 # Useful Websites
 
