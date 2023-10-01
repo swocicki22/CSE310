@@ -10,7 +10,7 @@ of the day I achieved my goal, the program runs smoothly, and I am quite proud o
 
 # website
 
-[Guessing Game Demo](https://www.youtube.com/watch?v=ySmRFyBusnw)
+[Guessing Game Demo](https://youtu.be/ySmRFyBusnw)
 
 # Development Environment
 
