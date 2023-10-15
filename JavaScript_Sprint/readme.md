@@ -4,6 +4,10 @@ I have always struggled with creating to do lists and following through with the
 
 I customized the software to include, my current classes for BYU-Idaho, as well as a seperate to do list that can include anything outside of school. Once a "to do" item has been completed, you have the option to remove it. 
 
+# Demo
+
+[To Do list Demo](https://vimeo.com/874446093/95af2d268d?ts=0&share=copy)
+
 # Development Environment
 
 Just like my C++ sprint, guides were helpful, but, at the same time I am extremely comfortable coding in javascript for that reason I decided to implement some HTML into the peoject to make it readable through a web application. 
