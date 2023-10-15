@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BYU-Idaho To-Do List</title>
+</head>
+<body>
+    <h1>My BYU-Idaho To-Do List</h1>
+    <div>
+        <input type="text" id="task" placeholder="New task...">
+        <select id="course">
+            <option value="Applied Programming">CSE 310</option>
+            <option value="Poject Management">CIT 380</option>
+            <option value="User Interface Evaluation & Design">CSE471</option>
+            <!-- Add more BYU-Idaho courses here -->
+        </select>
+        <button id="addTask">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+    <div>
+        <button id="clearCompleted">Clear Completed</button>
+    </div>
+
+    <h2>Non-BYUI List</h2>
+    <div>
+        <input type="text" id="personalTask" placeholder="New personal task...">
+        <button id="addPersonalTask">Add</button>
+    </div>
+    <ul id="personalTaskList"></ul>
+    <div>
+        <button id="clearPersonalCompleted">Clear Completed</button>
+    </div>
+
+    <script>
+        let tasks = [];
+        let personalTasks = [];
+
+        function updateTaskList() {
+            const taskList = document.getElementById("taskList");
+            taskList.innerHTML = "";
+            tasks.forEach((task, index) => {
+                const li = document.createElement("li");
+                li.appendChild(document.createTextNode(`[${task.course}] ${task.text}`));
+                const removeButton = document.createElement("button");
+                removeButton.innerText = "Remove";
+                removeButton.addEventListener("click", () => removeTask(index));
+                li.appendChild(removeButton);
+                const completeCheckbox = document.createElement("input");
+                completeCheckbox.type = "checkbox";
+                completeCheckbox.checked = task.completed;
+                completeCheckbox.addEventListener("change", () => toggleComplete(index));
+                li.appendChild(completeCheckbox);
+                taskList.appendChild(li);
+            });
+        }
+
+        function updatePersonalTaskList() {
+            const personalTaskList = document.getElementById("personalTaskList");
+            personalTaskList.innerHTML = "";
+            personalTasks.forEach((task, index) => {
+                const li = document.createElement("li");
+                li.appendChild(document.createTextNode(task.text));
+                const removeButton = document.createElement("button");
+                removeButton.innerText = "Remove";
+                removeButton.addEventListener("click", () => removePersonalTask(index));
+                li.appendChild(removeButton);
+                const completeCheckbox = document.createElement("input");
+                completeCheckbox.type = "checkbox";
+                completeCheckbox.checked = task.completed;
+                completeCheckbox.addEventListener("change", () => togglePersonalComplete(index));
+                li.appendChild(completeCheckbox);
+                personalTaskList.appendChild(li);
+            });
+        }
+
+        function addTask() {
+            const taskInput = document.getElementById("task");
+            const taskText = taskInput.value;
+            const courseSelect = document.getElementById("course");
+            const course = courseSelect.value;
+            if (taskText.trim() !== "") {
+                tasks.push({ text: taskText, course: course, completed: false });
+                taskInput.value = "";
+                updateTaskList();
+            }
+        }
+
+        function addPersonalTask() {
+            const personalTaskInput = document.getElementById("personalTask");
+            const personalTaskText = personalTaskInput.value;
+            if (personalTaskText.trim() !== "") {
+                personalTasks.push({ text: personalTaskText, completed: false });
+                personalTaskInput.value = "";
+                updatePersonalTaskList();
+            }
+        }
+
+        function removeTask(index) {
+            tasks.splice(index, 1);
+            updateTaskList();
+        }
+
+        function removePersonalTask(index) {
+            personalTasks.splice(index, 1);
+            updatePersonalTaskList();
+        }
+
+        function toggleComplete(index) {
+            tasks[index].completed = !tasks[index].completed;
+            updateTaskList();
+        }
+
+        function togglePersonalComplete(index) {
+            personalTasks[index].completed = !personalTasks[index].completed;
+            updatePersonalTaskList();
+        }
+
+        function clearCompleted() {
+            tasks = tasks.filter(task => !task.completed);
+            updateTaskList();
+        }
+
+        function clearPersonalCompleted() {
+            personalTasks = personalTasks.filter(task => !task.completed);
+            updatePersonalTaskList();
+        }
+
+        document.getElementById("addTask").addEventListener("click", addTask);
+        document.getElementById("clearCompleted").addEventListener("click", clearCompleted);
+
+        document.getElementById("addPersonalTask").addEventListener("click", addPersonalTask);
+        document.getElementById("clearPersonalCompleted").addEventListener("click", clearPersonalCompleted);
+
+        updateTaskList();
+        updatePersonalTaskList();
+    </script>
+</body>
+</html>
+
