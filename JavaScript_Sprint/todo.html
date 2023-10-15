@@ -135,5 +135,14 @@
         }
 
         // Event listeners
+        document.getElementById("addTask").addEventListener("click", addTask);
+        document.getElementById("clearCompleted").addEventListener("click", clearCompleted);
+        document.getElementById("addPersonalTask").addEventListener("click", addPersonalTask);
+        document.getElementById("clearPersonalCompleted").addEventListener("click", clearPersonalCompleted);
 
-
+        // Initialize the lists
+        updateTaskList();
+        updatePersonalTaskList();
+    </script>
+</body>
+</html>
