@@ -30,13 +30,14 @@ class CharacterGame
         "Nehor",
         "Omni",
         "Zeniff"
+        "Shane"
         // Add more characters here
     };
 
     private string characterToGuess;
     private string guessedCharacter;
     private int attempts;
-    private int maxAttempts = 6; // You can adjust this as needed.
+    private int maxAttempts = 10; // You can adjust this as needed.
     private int score;
 
     public void Play()
