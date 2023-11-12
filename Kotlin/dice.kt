@@ -101,5 +101,5 @@ fun main() {
     }
 
     // Game over message
-    println("Thanks for playing Shane's Roll to 21, $playerName! Your final bank is $bank. Have a great day!")
+    println("Thanks for playing Shane's Roll to 21, $playerName! Your final score is $bank. Have a great day!")
 }
