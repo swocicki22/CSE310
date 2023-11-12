@@ -25,7 +25,7 @@ fun main() {
     println("Hello, $playerName! Welcome to Shane's Roll to 21!")
 
     // Set the number of sides for the dice
-    val sides = 6
+    val sides = 7
     val dice = Dice(sides)
 
     // Initialize game variables
