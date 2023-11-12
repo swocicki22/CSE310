@@ -8,7 +8,7 @@ data class Dice(val sides: Int) {
 
 fun main() {
     // Get user information
-    println("Welcome to Shane's Roll to 21!")
+    println("Welcome to Shane's Roll to 21! All you have to do is gain 21 points and you WIN! ")
     print("What's your name? ")
     val playerName = readLine()
 
@@ -17,7 +17,7 @@ fun main() {
 
     // Validate age input
     if (age == null || age <= 0) {
-        println("Invalid age. Please enter a valid age.")
+        println("Now don't you lie to me, thats not your age.")
         return
     }
 
