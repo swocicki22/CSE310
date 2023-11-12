@@ -22,4 +22,4 @@ I was big on tutorials, getting C# to open in VScode without any errors included
 # Future Work/Improvements
 
 - I don't think i was ever able to reach 21 after around 50 attempts so maybe some changes to make the game easier to win. 
-- I would like to make the game not so "botty" it seemed lifeless with the dialogue. 
+- I would like to make the game not so "botty" it seemed lifeless with the dialogue that I went with. 
