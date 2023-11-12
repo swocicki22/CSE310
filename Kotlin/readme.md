@@ -8,7 +8,7 @@ me so many hiccups, at one point I was ready to be done with it.
 That's enough rambling, the software is a dice roller pointed towards rolling a total of 21, and it gives the user 4 attempts to roll.
 # website
 
-[Name Guesser Demo]()
+[Name Guesser Demo](byui.edu)
 
 # Development Environment
 
