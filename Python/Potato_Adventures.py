@@ -171,14 +171,14 @@ while days <= 3:
     if days == 2:
         result = encounter_gollum()
         if result == "lose":
-            print("Unfortunately, your adventure ends here. Better luck next time!")
+            print("Unfortunately, your adventure as a potato farmer ends here. Better luck next time!")
             break
 
     # Encounter Sauron after the second day
     if days == 3:
         result = encounter_sauron()
         if result == "lose":
-            print("Unfortunately, your adventure ends here. Better luck next time!")
+            print("Unfortunately, your adventure as a potato farmer ends here. Better luck next time!")
             break
 
     print(f"\nYou are starting Day {days} on the potato farm.")
