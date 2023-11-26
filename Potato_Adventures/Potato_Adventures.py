@@ -36,7 +36,7 @@ def encounter_gollum():
     choice = choose_option(gollum_options)
 
     if choice == 1:
-        print("\nYou offer Gollum some potatoes. Surprisingly, he seems delighted and leaves peacefully.")
+        print("\nYou offer Gollum some potatoes. Surprisingly, he seems delighted and leaves peacefully, which is surprising because he hates taters.")
         time.sleep(1)
     elif choice == 2:
         print("\nYou attempt to scare Gollum away, but he becomes agitated and causes a little chaos in the potato fields.")
