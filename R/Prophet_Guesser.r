@@ -2,6 +2,7 @@
 display_instructions <- function() {
   cat("Welcome to the LDS Prophets Guessing Game!\n")
   cat("Try to guess the names, birth years, and birthplaces of LDS prophets.\n")
+  cat("The options are Joseph Smith, Brigham Young, Thomas S. Monson and Russell M. Nelson. \n")
   cat("For each prophet, you will guess the name, birth year, and birthplace.\n")
 }
 
@@ -61,8 +62,8 @@ play_prophets_game <- function() {
     
     # Guess the birthplace (multiple choice)
     birthplace_choices <- c("Sharon, Vermont", "Whitingham, Vermont", "Salt Lake City, Utah", "Salt Lake City, Utah")
-    birthplace_prompt <- paste("Where was ", prophet, " born?\n", 
-                               "1) Sharon, Vermont  2) Whitingham, Vermont  3) Salt Lake City, Utah  4) Salt Lake City, Utah  Enter your choice: ", sep = "")
+    birthplace_prompt <- paste("Where was ", prophet, " born? Sharon, Vermont, Whitingham, Vermont, Salt Lake City, Utah or 4) Salt Lake City, Utah  \n", 
+                               "Enter your choice: ", sep = "")
     birthplace_guess <- get_multiple_choice_input(birthplace_prompt, birthplace_choices)
     
     # Check if the birthplace guess is correct
