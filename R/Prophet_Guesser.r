@@ -25,6 +25,10 @@ play_prophets_game <- function() {
     BirthYear = c(1805, 1801, 1927, 1924),
     Birthplace = c("Sharon, Vermont", "Whitingham, Vermont", "Salt Lake City, Utah", "Salt Lake City, Utah")
   )
+  
+  # Shuffle the rows of the data frame
+  prophets_data <- prophets_data[sample(nrow(prophets_data)), ]
+
   correct_name_guesses <- 0
   correct_birth_year_guesses <- 0
   correct_birthplace_guesses <- 0
@@ -54,7 +58,7 @@ play_prophets_game <- function() {
     birth_year_guess <- get_multiple_choice_input(birth_year_prompt, birth_year_choices)
     
     # Check if the birth year guess is correct
-    if (birth_year_guess == birth_year_choices[birth_year]) {
+    if (birth_year_guess == birth_year_choices[i]) {
       cat("Correct!\n")
       correct_birth_year_guesses <- correct_birth_year_guesses + 1
     } else {
@@ -68,7 +72,7 @@ play_prophets_game <- function() {
     birthplace_guess <- get_multiple_choice_input(birthplace_prompt, birthplace_choices)
     
     # Check if the birthplace guess is correct
-    if (birthplace_guess == birthplace_choices[birthplace]) {
+    if (birthplace_guess == birthplace_choices[i]) {
       cat("Correct!\n")
       correct_birthplace_guesses <- correct_birthplace_guesses + 1
     } else {
