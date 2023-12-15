@@ -1,5 +1,3 @@
-# LDS Prophets Guessing Game in R with Dataframes and Birth Year
-
 # Function to display game instructions
 display_instructions <- function() {
   cat("Welcome to the LDS Prophets Guessing Game!\n")
@@ -23,8 +21,8 @@ get_multiple_choice_input <- function(prompt, choices) {
 play_prophets_game <- function() {
   # Data frame with prophets, birth years, and birthplaces
   prophets_data <- data.frame(
-    Prophet = c("Joseph Smith", "Brigham Young", "Thomas S. Monson", "Russell M. Nelson")
-    BirthYear = c(1805, 1801, 1927, 1924)
+    Prophet = c("Joseph Smith", "Brigham Young", "Thomas S. Monson", "Russell M. Nelson"),
+    BirthYear = c(1805, 1801, 1927, 1924),
     Birthplace = c("Sharon, Vermont", "Whitingham, Vermont", "Salt Lake City, Utah", "Salt Lake City, Utah")
   )
   correct_name_guesses <- 0
@@ -51,8 +49,8 @@ play_prophets_game <- function() {
     
     # Guess the birth year (multiple choice)
     birth_year_choices <- c("A", "B", "C", "D")
-    birth_year_prompt <- paste("In what year was", prophet, "born?\n", 
-                               "A) 1805  B) 1801  C) 1808  D) 1924  Enter your choice: ", sep = "")
+    birth_year_prompt <- paste("In what year was ", prophet, " born?\n", 
+                               "A) 1805  B) 1801  C) 1927  D) 1924  Enter your choice: ", sep = "")
     birth_year_guess <- get_multiple_choice_input(birth_year_prompt, birth_year_choices)
     
     # Check if the birth year guess is correct
