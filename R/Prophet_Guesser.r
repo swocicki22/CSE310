@@ -24,7 +24,7 @@ play_prophets_game <- function() {
   # Data frame with prophets, birth years, and birthplaces
   prophets_data <- data.frame(
     Prophet = c("Joseph Smith", "Brigham Young", "Thomas S. Monson", "Russell M. Nelson")
-    BirthYear = c(1805, 1801, 1808, 1927, 1924),
+    BirthYear = c(1805, 1801, 1808, 1927, 1924)
     Birthplace = c("Sharon, Vermont", "Whitingham, Vermont", "Salt Lake City, Utah", "Salt Lake City, Utah")
   )
   correct_name_guesses <- 0
