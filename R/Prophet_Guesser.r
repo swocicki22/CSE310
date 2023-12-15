@@ -5,16 +5,10 @@ display_instructions <- function() {
   cat("For each prophet, you will guess the name, birth year, and birthplace.\n")
 }
 
-# Function to get user's multiple choice input
+# Function to get user's multiple choice input using menu
 get_multiple_choice_input <- function(prompt, choices) {
-  while (TRUE) {
-    user_input <- toupper(readline(prompt = prompt))
-    if (user_input %in% choices) {
-      return(user_input)
-    } else {
-      cat("Invalid choice. Please enter A, B, C, or D.\n")
-    }
-  }
+  choice <- menu(c(prompt, choices), title = "Choose an option:")
+  return(choices[choice])
 }
 
 # Function to play the guessing game
@@ -52,9 +46,9 @@ play_prophets_game <- function() {
     }
     
     # Guess the birth year (multiple choice)
-    birth_year_choices <- c("A", "B", "C", "D")
-    birth_year_prompt <- paste("In what year was ", prophet, " born?\n", 
-                               "A) 1805  B) 1801  C) 1927  D) 1924  Enter your choice: ", sep = "")
+    birth_year_choices <- c("1805", "1801", "1927", "1924")
+    birth_year_prompt <- paste("In what year was", prophet, "born?\n", 
+                               "1) 1805  2) 1801  3) 1927  4) 1924  Enter your choice: ", sep = "")
     birth_year_guess <- get_multiple_choice_input(birth_year_prompt, birth_year_choices)
     
     # Check if the birth year guess is correct
@@ -66,9 +60,9 @@ play_prophets_game <- function() {
     }
     
     # Guess the birthplace (multiple choice)
-    birthplace_choices <- c("A", "B", "C", "D")
-    birthplace_prompt <- paste("Where was ", prophet, " born?\n", 
-                               "A) Sharon, Vermont  B) Whitingham, Vermont  C) Miliband, England  D) Salt Lake City, Utah  Enter your choice: ", sep = "")
+    birthplace_choices <- c("Sharon, Vermont", "Whitingham, Vermont", "Salt Lake City, Utah", "Salt Lake City, Utah")
+    birthplace_prompt <- paste("Where was", prophet, "born?\n", 
+                               "1) Sharon, Vermont  2) Whitingham, Vermont  3) Salt Lake City, Utah  4) Salt Lake City, Utah  Enter your choice: ", sep = "")
     birthplace_guess <- get_multiple_choice_input(birthplace_prompt, birthplace_choices)
     
     # Check if the birthplace guess is correct
