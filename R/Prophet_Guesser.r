@@ -23,9 +23,9 @@ get_multiple_choice_input <- function(prompt, choices) {
 play_prophets_game <- function() {
   # Data frame with prophets, birth years, and birthplaces
   prophets_data <- data.frame(
-    Prophet = c("Joseph Smith", "Brigham Young", "John Taylor", "Wilford Woodruff", "Lorenzo Snow", "Joseph F. Smith", "Heber J. Grant", "George Albert Smith", "David O. McKay", "Joseph Fielding Smith", "Harold B. Lee", "Spencer W. Kimball", "Ezra Taft Benson", "Howard W. Hunter", "Gordon B. Hinckley", "Thomas S. Monson", "Russell M. Nelson"),
-    BirthYear = c(1805, 1801, 1808, 1807, 1814, 1838, 1856, 1870, 1873, 1876, 1899, 1895, 1899, 1907, 1910, 1927, 1924),
-    Birthplace = c("Sharon, Vermont", "Whitingham, Vermont", "Milnthorpe, England", "Farmington, Connecticut", "Mantua, Ohio", "Far West, Missouri", "Salt Lake City, Utah", "Salt Lake City, Utah", "Huntsville, Utah", "Salt Lake City, Utah", "Clifton, Idaho", "Salt Lake City, Utah", "Whitney, Idaho", "Boise, Idaho", "Salt Lake City, Utah", "Salt Lake City, Utah", "Salt Lake City, Utah")
+    Prophet = c("Joseph Smith", "Brigham Young", "Thomas S. Monson", "Russell M. Nelson"),
+    BirthYear = c(1805, 1801, 1808, 1927, 1924),
+    Birthplace = c("Sharon, Vermont", "Whitingham, Vermont", "Salt Lake City, Utah", "Salt Lake City, Utah")
   )
   correct_name_guesses <- 0
   correct_birth_year_guesses <- 0
