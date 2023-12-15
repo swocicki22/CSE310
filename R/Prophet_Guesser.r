@@ -47,8 +47,8 @@ play_prophets_game <- function() {
     
     # Guess the birth year (multiple choice)
     birth_year_choices <- c("1805", "1801", "1927", "1924")
-    birth_year_prompt <- paste("In what year was", prophet, "born?\n", 
-                               "1) 1805  2) 1801  3) 1927  4) 1924  Enter your choice: ", sep = "")
+    birth_year_prompt <- paste("In what year was ", prophet, " born? 1805, 1801, 1927 or 1924? \n", 
+                               "Enter your choice: ", sep = "")
     birth_year_guess <- get_multiple_choice_input(birth_year_prompt, birth_year_choices)
     
     # Check if the birth year guess is correct
@@ -61,7 +61,7 @@ play_prophets_game <- function() {
     
     # Guess the birthplace (multiple choice)
     birthplace_choices <- c("Sharon, Vermont", "Whitingham, Vermont", "Salt Lake City, Utah", "Salt Lake City, Utah")
-    birthplace_prompt <- paste("Where was", prophet, "born?\n", 
+    birthplace_prompt <- paste("Where was ", prophet, " born?\n", 
                                "1) Sharon, Vermont  2) Whitingham, Vermont  3) Salt Lake City, Utah  4) Salt Lake City, Utah  Enter your choice: ", sep = "")
     birthplace_guess <- get_multiple_choice_input(birthplace_prompt, birthplace_choices)
     
