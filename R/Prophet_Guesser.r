@@ -2,16 +2,15 @@
 display_instructions <- function() {
   cat("Welcome to the LDS Prophets Guessing Game!\n")
   cat("Try to guess the names, birth years, and birthplaces of LDS prophets.\n")
-  cat("The options are: Joseph Smith, Brighham Young, Thomas S. Monson and Russell M. Nelson.\n")
   cat("For each prophet, you will guess the name, birth year, and birthplace.\n")
 }
 
 # Function to get user's multiple choice input
 get_multiple_choice_input <- function(prompt, choices) {
   while (TRUE) {
-    user_input <- readline(prompt = prompt)
-    if (toupper(user_input) %in% toupper(choices)) {
-      return(toupper(user_input))
+    user_input <- toupper(readline(prompt = prompt))
+    if (user_input %in% choices) {
+      return(user_input)
     } else {
       cat("Invalid choice. Please enter A, B, C, or D.\n")
     }
@@ -50,8 +49,8 @@ play_prophets_game <- function() {
     
     # Guess the birth year (multiple choice)
     birth_year_choices <- c("A", "B", "C", "D")
-    birth_year_prompt <- paste("In what year was ", prophet, " born?\n", 
-                               "A) 1805  B) 1801  C) 1927  D) 1924  Enter your choice: ", sep = "")
+    birth_year_prompt <- paste("In what year was", prophet, "born?\n", 
+                               "A) 1805  B) 1801  C) 1808  D) 1924  Enter your choice: ", sep = "")
     birth_year_guess <- get_multiple_choice_input(birth_year_prompt, birth_year_choices)
     
     # Check if the birth year guess is correct
