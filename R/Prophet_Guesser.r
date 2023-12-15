@@ -2,7 +2,7 @@
 display_instructions <- function() {
   cat("Welcome to the LDS Prophets Guessing Game!\n")
   cat("Try to guess the names, birth years, and birthplaces of LDS prophets.\n")
-  cat("The options are: Joseph Smith, Birgham Young, Thomas S. Monson and Russell M. Nelson.\n")
+  cat("The options are: Joseph Smith, Brighham Young, Thomas S. Monson and Russell M. Nelson.\n")
   cat("For each prophet, you will guess the name, birth year, and birthplace.\n")
 }
 
